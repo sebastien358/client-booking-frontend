@@ -1,0 +1,59 @@
+<script setup lang="ts">
+import Sidebar from "@/features/admin/components/Sidebar.vue";
+</script>
+
+<template>
+  <div class="admin-layout">
+    <!-- Menu latéral -->
+    <Sidebar />
+    <!-- Contenu principal -->
+    <main class="admin-content">
+      <router-view v-slot="{ Component, route }">
+        <Component :is="Component" :key="route.fullPath" v-if="Component" />
+      </router-view>
+    </main>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.admin-layout {
+  display: flex;
+  background: #18181b;
+  color: white;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+    background: #141414;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    overflow-y: auto;
+    height: calc(100vh);
+    h1,
+    h2 {
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+    .section {
+      background: #1c1c1c;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .admin-layout {
+    flex-direction: column;
+    .admin-content {
+      padding: 10px
+    }
+  }
+}
+
+/* ===========================
+   Responsive pour mobile
+=========================== */
+
+</style>

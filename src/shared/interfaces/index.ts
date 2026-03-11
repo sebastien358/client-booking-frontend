@@ -1,0 +1,6 @@
+export * from './booking.interface.ts'
+export * from './testimonial.interface.ts'
+export * from  './contact.interface.ts'
+export * from './login.interface.ts'
+export * from './category.interface.ts'
+export * from './staff.interface.ts'
