@@ -135,7 +135,7 @@ onMounted(() => {
 ===============*/
 
 .container {
-  padding: 30px 20px 30px 20px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -232,13 +232,13 @@ onMounted(() => {
 
 @media (max-width: 991.98px) {
   .container {
-    padding: 30px 20px;
+    padding: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
   .container {
-    padding: 20px 10px;
+    padding: 100px 20px;
   }
 
   .request-password-form {

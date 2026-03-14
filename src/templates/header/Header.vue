@@ -217,13 +217,10 @@ const closeMenu = () => {
         >
       </div>
       <div class="mobile-menu__connected">
-        <RouterLink
-          to="/admin"
-          @click="closeMenu()"
-          :class="{ active: $route.path === '/admin' && !$route.hash }"
-        >Espace pro</RouterLink
-        >
-        <a @click="logout()" href="#" class="logout-mobile">Déconnexion</a>
+        <RouterLink v-if="authStore.isLoggedIn" to="/admin" :class="{ active: $route.path === '/admin' && !$route.hash }">
+          {{ authStore.isAdmin ? 'Espace pro' : 'Espace client' }}
+        </RouterLink>
+        <a v-if="authStore.isLoggedIn" @click="logout()" href="#" class="#">Déconnexion</a>
       </div>
       <button @click="bookingOpen()" class="mobile-cta">Prendre RDV</button>
     </div>
@@ -445,7 +442,7 @@ const closeMenu = () => {
     .mobile-cta {
       border: 0;
       width: 30%;
-      margin: 10px auto 0 auto;
+      margin: 0 auto 0 auto;
       font-size: 12px;
     }
     .logout-mobile {
@@ -473,7 +470,7 @@ const closeMenu = () => {
     .mobile-cta {
       border: 0;
       width: 37%;
-      margin: 10px auto 0 auto;
+      margin: 0 auto 0 auto;
       font-size: 11px;
     }
   }

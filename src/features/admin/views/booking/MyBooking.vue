@@ -116,7 +116,6 @@ const deleteAppointment = (id: number) => {
 
 .my-booking {
   width: 420px;
-
   padding: 2rem 2rem 1.1rem 2rem;
   background: #ffffff;
   border-radius: 10px;
@@ -149,7 +148,7 @@ const deleteAppointment = (id: number) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 6px;
+    gap: 20px;
     .btn {
       width: 120px;
     }
@@ -186,7 +185,7 @@ const deleteAppointment = (id: number) => {
 
 @media (max-width: 767.98px) {
   .booking-container {
-    padding: 20px 10px;
+    padding: 30px 10px;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
@@ -207,6 +206,9 @@ const deleteAppointment = (id: number) => {
         margin-top: 13px;
         font-size: 13px;
       }
+    }
+    &__actions {
+      gap: 10px;
     }
   }
 }

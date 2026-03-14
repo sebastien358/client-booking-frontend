@@ -231,6 +231,7 @@ const toggleModal = () => {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px 20px;
   height: 100%;
 }
 
@@ -338,6 +339,8 @@ const toggleModal = () => {
 @media (max-width: 991.98px) {
   .container {
     margin: 0;
+    height: initial;
+    padding: 30px 20px;
   }
   .staff__form {
     padding: 1.5rem 1.2rem 1rem 1.2em;
@@ -371,6 +374,8 @@ const toggleModal = () => {
 @media (max-width: 767.98px) {
   .container {
     margin: 0;
+    padding: 30px 10px;
+    height: initial;
   }
   .staff__form {
     padding: 1.4rem 1.2rem 1rem 1.2em;

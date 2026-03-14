@@ -276,7 +276,7 @@ onMounted(() => {
 
 @media (max-width: 991.98px) {
   .register {
-    height: 100%;
+    //height: 100%;
     &__form {
       padding: 2rem 1.5rem 1rem 1.5rem;
       max-width: 340px;
@@ -293,7 +293,7 @@ onMounted(() => {
 
 @media (max-width: 767.98px) {
   .container {
-    padding: 70px 1rem 70px 1rem;
+    padding: 50px 10px;
   }
 
   .register {

@@ -319,7 +319,7 @@ a {
 
 @media (max-width: 767.98px) {
   .container {
-    padding: 70px 1rem 70px 1rem;
+    padding: 70px 20px 70px 20px;
   }
 
   .login {
@@ -344,7 +344,6 @@ a {
           }
         }
       }
-
     }
   }
 

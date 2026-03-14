@@ -165,7 +165,7 @@ onMounted(() => {
 ===============*/
 
 .container {
-  padding: 30px 20px 30px 20px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -245,6 +245,10 @@ onMounted(() => {
 }
 
 @media (max-width: 991.98px) {
+  .container {
+    padding: 20px;
+  }
+
   .reset-password {
     height: 100%;
     &__form {
@@ -270,7 +274,7 @@ onMounted(() => {
 
 @media (max-width: 767.98px) {
   .container {
-    padding: 70px 1rem 70px 1rem;
+    padding: 100px 20px;
   }
 
   .reset-password {
